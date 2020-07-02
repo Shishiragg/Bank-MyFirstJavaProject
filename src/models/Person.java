@@ -1,5 +1,6 @@
 package models;
 
+//Common super class holding customer general information
 public class Person {
 	private String name;
 	private String gender;
