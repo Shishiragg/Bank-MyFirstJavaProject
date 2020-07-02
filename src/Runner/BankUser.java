@@ -1,11 +1,6 @@
 package Runner;
 
-import models.Account;
-import models.Address;
-import models.Bank;
-import models.BankAccount;
-import models.BankEmployee;
-import models.Customer;
+import models.*;
 
 public class BankUser {
 
@@ -18,7 +13,7 @@ public class BankUser {
 
 		Address employeeAddress = new Address(1984, "kh road", "gandhinagar", "muzaffarnagar", "251001", "UP", "INDIA");
 
-		BankEmployee bankEmployee = new BankEmployee("ANSHIKA", "BRANCH MANAGER", "FEMALE", employeeAddress, 100000);
+		BankEmployee bankEmployee = new BankEmployee("ANSHIKA", "BRANCH MANAGER", "FEMALE", employeeAddress,7906454647l,"anshika@gmail.com", 100000);
 
 		Account account = new Account(100);
 
