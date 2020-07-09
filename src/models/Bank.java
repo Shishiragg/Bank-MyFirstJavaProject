@@ -1,7 +1,6 @@
 package models;
 
-
-public class Bank {
+abstract public class Bank {
 	private Address bankAddress;
 	private BankEmployee[] bankEmployee;
 	private BankAccount[] bankAccounts;
@@ -47,11 +46,15 @@ public class Bank {
 		this.bankName = bankName;
 	}
 
+	//THIS IS A ABSTRACT FUNCTION TO BE IMPLEMENTED BY SUB CLASS.
+	abstract int getRateOfInterest();
+
 	public void showBankDetails() {
 
 		System.out.println("BANK NAME IS: " + getBankName());
 		System.out.println("BANK ADDRESS IS: ");
 		bankAddress.showAddressDetails();
+		System.out.println("BANK RATE OF INTEREST IS" + " " + getRateOfInterest());
 		System.out.println("BANK EMPLOYEES ARE:");
 		for (int i = 0; i < bankEmployee.length; i++) {
 			bankEmployee[i].showEmployeeDetails();
