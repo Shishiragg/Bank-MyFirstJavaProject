@@ -1,12 +1,10 @@
 package models;
 
 
-public class BankAccount {
+public class BankAccount implements TemplateAccount {
 	private Account account;
 	private Customer customer;
-	private static final String NOT_ENOUGH_BALANCE = "NOT ENOUGH BALANCE TO WITHDRAW !!";
-	private static final String CURRENT_BALANCE = "MONEY DEPOSITED SUCCESSFULLY.....\nYOUR CURRENT ACCOUNT BALANCE IS ";
-	private static final String CURRENTS_BALANCE = "MONEY WITHDRAWN SUCCESSFULLY...\nYOUR CURRENT ACCOUNT BALANCE IS ";
+	
 
 	public BankAccount(Account acc, Customer custmer) {
 		account = acc;
