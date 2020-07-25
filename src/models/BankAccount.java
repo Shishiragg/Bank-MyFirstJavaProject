@@ -11,6 +11,7 @@ public class BankAccount implements TemplateAccount {
 		customer = custmer;
 	}
 
+	@Override
 	public void withdraw(int amount) {
 		int presentAmount = account.getAmount();
 		if (presentAmount < amount) {
@@ -23,6 +24,7 @@ public class BankAccount implements TemplateAccount {
 
 	}
 
+	@Override
 	public void deposit(int amount) {
 		int presentAmount = account.getAmount();
 		presentAmount = presentAmount + amount;
